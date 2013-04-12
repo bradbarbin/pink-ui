@@ -1,0 +1,34 @@
+body{
+	background-color:#f1f1f1;
+	font-family:'Lato', 'Helvetica Neue', Arial;
+}
+
+.navbar .brand{
+	text-indent:-9999px;
+	background:url('../img/logo.png') no-repeat;
+	height:40px;
+	width:207px;
+	position:absolute;
+	left:40px;
+	top:20px;
+} 
+
+#job-form{
+	background:white;
+	-webkit-border-radius: 5px 0 0 0;
+	border-radius: 5px 0 0 0;
+	background-color: #fff;
+	border: 1px solid #d7d7d7;
+	border-right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0 0 0 100px;
+	position: absolute;
+	right: 0;
+	top: 70px;
+
+}
+
+.pull-right.actions{
+	margin-top:10px;
+}

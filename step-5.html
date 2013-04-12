@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+
+<!--fonts-->
+<!-- <link href='http://fonts.googleapis.com/css?family=Lato:400,700,300italic' rel='stylesheet' type='text/css'> -->
+
+<!--style-->
+<link rel="stylesheet" type="text/css" href="css/boostrap.css">
+<link rel="stylesheet" type="text/css" href="css/flat-ui.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<!--script-->
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<!-- <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script> -->
+<script src="app.js"></script>
+
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+  <div>
+  	<div class="container">
+    	<a class="brand" href="./index.html">Smashing Good Hires</a>
+        <div class="pull-right actions">
+			<form>
+				<input type="text" placeholder="Search Candidates">
+			</form>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="row-fluid">
+	<div id="vertical-menu">
+		<div class="item inactive">
+			<img src="img/glyphicons/png/glyphicons_020_home.png">
+			<p>Home</p>
+			<div class="arrow"></div>
+		</div>
+		<div class="item inactive">
+			<img src="img/glyphicons/png/glyphicons_139_adjust_alt.png">
+			<p>Description</p>
+			<div class="arrow"></div>
+		</div>
+		<div class="item inactive">
+			<img src="img/glyphicons/png/glyphicons_089_building.png">
+			<p>Education</p>
+			<div class="arrow"></div>
+		</div>
+		<div class="item">
+			<img src="img/glyphicons/png/glyphicons_251_scuba_diving.png">
+			<p>Industry</p>
+			<div class="arrow"></div>
+		</div>
+		
+		<div class="item inactive">
+			<img src="img/glyphicons/png/glyphicons_242_google_maps.png">
+			<p>Location</p>
+			<div class="arrow"></div>
+		</div>
+	</div>
+	<!--end menu -->
+	<div id="job-form">
+		<div id="education" class="tab active">
+			<h2 class="job-title">Project Manager</h2>
+			<div class="pull-right">
+				<a href="step-6.html" id="next-step" class="btn btn-large disabled">Save &amp; Continue</a>
+				<a href="#" class="btn btn-large btn-primary">Test this job</a>
+			</div>
+			<hr>
+			<p>Select the industries that you'd like to target. Hint: Less is more.</p>
+			<div class="row-fluid" style="margin-top:20px;">
+			
+			<div id="chosenIndustries">
+				<h3>Selected Industries:</h3>
+			</div>
+
+			<div id="to-top" class="hidden">Go to top</div>
+
+
+<form name="industryChooser" id="industryChooser">
+<fieldset>
+	<label class="checkbox"><input type="checkbox" class="checkall" value="">Check all<br/></label>
+	<hr>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Accounting">Accounting</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Airlines/Aviation">Airlines/Aviation</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Alternative Dispute Resolution">Alternative Dispute Rlabel</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Alternative Medicine">Alternative Medicine</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Animation">Animation</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Apparel & Fashion">Apparel &amp; Fashion</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Architecture & Planning">Architecture &amp; Planning</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Arts and Crafts">Arts and Crafts</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Automotive">Automotive</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Aviation & Aerospace">Aviation &amp; Aerospace</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Banking">Banking</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Biotechnology">Biotechnology</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Broadcast Media">Broadcast Media</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Building Materials">Building Materials</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Business Supplies and Equipment">Business Supplies and Equipment</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Capital Markets">Capital Markets</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Chemicals">Chemicals</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Civic & Social Organization">Civic &amp; Social Organization</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Civil Engineering">Civil Engineering</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Commercial Real Estate">Commercial Real Estate</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Computer & Network Security">Computer &amp; Network Security</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Computer Games">Computer Games</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Computer Hardware">Computer Hardware</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Computer Networking">Computer Networking</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Computer Software">Computer Software</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Construction">Construction</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Consumer Electronics">Consumer Electronics</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Consumer Goods">Consumer Goods</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Consumer Services">Consumer Services</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Cosmetics">Cosmetics</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Dairy">Dairy</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Defense & Space">Defense &amp; Space</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Design">Design</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Education Management">Education Management</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="E-Learning">E-Learning</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Electrical/Electronic Manufacturing">Electrical/label>Manufacturing</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Entertainment">Entertainment</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Environmental Services">Environmental Services</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Events Services">Events Services</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Executive Office">Executive Office</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Facilities Services">Facilities Services</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Farming">Farming</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Financial Services">Financial Services</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Fine Art">Fine Art</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Fishery">Fishery</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Food Beverages">Food &amp; Beverages</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Food Production">Food Production</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Fund-Raising">Fund-Raising</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Furniture">Furniture</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Gambling & Casinos">Gambling &amp; Casinos</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Glass, Ceramics & Concrete">Glass, Ceramics &amp; Concrete</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Government Administration">Government Administration</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Government Relations">Government Relations</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Graphic Design">Graphic Design</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Health, Wellness and Fitness">Health, Wellness and Fitness</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Higher Education">Higher Education</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Hospital & Health Care">Hospital &amp; Health Care</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Hospitality">Hospitality</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Human Resources">Human Resources</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Import and Export">Import and Export</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Individual & Family Services">Individual &amp; Family Services</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Industrial Automation">Industrial Automation</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Information Services">Information Services</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Information Technology and Services">Information Technology Services</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Insurance">Insurance</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="International Affairs">International Affairs</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="International Trade and Development">International Trade and Development</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Internet">Internet</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Investment Banking">Investment Banking</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Investment Management">Investment Management</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Judiciary">Judiciary</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Law Enforcement">Law Enforcement</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Law Practice">Law Practice</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Legal Services">Legal Services</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Legislative Office">Legislative Office</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Leisure, Travel & Tourism">Leisure, Travel &amp; Tourism</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Libraries">Libraries</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Logistics and Supply Chain">Logistics and Supply Chain</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Luxury Goods & Jewelry">Luxury Goods &amp; Jewelry</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Machinery">Machinery</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Management Consulting">Management Consulting</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Maritime">Maritime</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Marketing and Advertising">Marketing and Advertising</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Market Research">Market Research</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Mechanical or Industrial Engineering">Mechanical or label>Engineering</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Media Production">Media Production</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Medical Devices">Medical Devices</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Medical Practice">Medical Practice</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Mental Health Care">Mental Health Care</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Military">Military</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Mining & Metals">Mining &amp; Metals</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Motion Pictures and Film">Motion Pictures and Film</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Museums and Institutions">Museums and Institutions</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Music">Music</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Nanotechnology">Nanotechnology</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Newspapers">Newspapers</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Nonprofit Organization Management">Nonprofit Orlabel>Management</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Oil & Energy">Oil &amp; Energy</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Online Media">Online Media</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Outsourcing/Offshoring">Outsourcing/Offshoring</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Package/Freight Delivery">Package/Freight Delivery</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Packaging and Containers">Packaging and Containers</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Paper & Forest Products">Paper &amp; Forest Products</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Performing Arts">Performing Arts</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Pharmaceuticals">Pharmaceuticals</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Philanthropy">Philanthropy</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Photography">Photography</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Plastics">Plastics</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Political Organization">Political Organization</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Primary/Secondary Education">Primary/Secondary Education</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Printing">Printing</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Professional Training & Coaching">Professional Trailabel>Coaching</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Program Development">Program Development</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Public Policy">Public Policy</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Public Relations and Communications">Public Rellabel>Communications</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Public Safety">Public Safety</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Publishing">Publishing</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Railroad Manufacture">Railroad Manufacture</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Ranching">Ranching</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Real Estate">Real Estate</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Recreational Facilities and Services">Recreational Facilabel>Services</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Religious Institutions">Religious Institutions</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Renewables & Environment">Renewables &amp; Environment</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Research">Research</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Restaurants">Restaurants</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Retail">Retail</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Security and Investigations">Security and Investigations</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Semiconductors">Semiconductors</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Shipbuilding">Shipbuilding</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Sporting Goods">Sporting Goods</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Sports">Sports</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Staffing and Recruiting">Staffing and Recruiting</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Supermarkets">Supermarkets</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Telecommunications">Telecommunications</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Textiles">Textiles</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Think Tanks">Think Tanks</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Tobacco">Tobacco</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Translation and Localization">Translation and Localization</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Transportation/Trucking/Railroad">Transportation/Trucking/Railroad</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Utilities">Utilities</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Venture Capital & Private Equity">Venture Capital &amp; Private Equity</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Veterinary">Veterinary</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Warehousing">Warehousing</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Wholesale">Wholesale</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Wine and Spirits">Wine and Spirits</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Wireless">Wireless</label>
+	<label class="checkbox"><input type="checkbox" name="industry" value="Writing and Editing">Writing </label>
+</fieldset>
+</form>
+
+
+<script>
+	$(function () {
+    $('.checkall').on('click', function () {
+        $(this).closest('fieldset').find(':checkbox').prop('checked', this.checked);
+    });
+});
+</script>
+      		</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
